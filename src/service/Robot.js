@@ -7,9 +7,9 @@ export default class Robot {
     }
 
     command() {
-        // initial coordinates out of planet borders
+        
         if (isRobotLost(this.coordinates, this.planet.borders)) {
-            return "NOT LANDED";
+            return "NOT LANDED"; // initial coordinates out of planet borders
         }
 
         for (const command of this.commands) {
